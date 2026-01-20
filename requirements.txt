@@ -17,7 +17,7 @@ unstructured
 unstructured[pdf]
 
 # Utilities
-urllib3==1.26.6
+urllib3==2.6.3
 accelerate
 bitsandbytes ; sys_platform != 'win32'
 bitsandbytes-windows ; sys_platform == 'win32'
@@ -31,3 +31,6 @@ Streamlit-extras
 
 # Excel File Manipulation
 openpyxl
+filelock>=3.20.3 # not directly required, pinned by Snyk to avoid a vulnerability
+torch>=2.9.0 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.1.5 # not directly required, pinned by Snyk to avoid a vulnerability
